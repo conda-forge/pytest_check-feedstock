@@ -1,5 +1,5 @@
 {% set name = "pytest_check" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest_check-{{ version }}.tar.gz
-  sha256: c93eee5a98bcd28634a4ec657ab62c46d25fa384300811e5a925d9c4d98b9540
+  sha256: b9c8db6b1dee3c1e66162bd079b81c083296cb7131e9841519c28a40818a4875
 
 build:
   noarch: python
