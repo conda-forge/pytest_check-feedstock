@@ -1,12 +1,12 @@
-{% set name = "pytest_check" %}
+{% set name = "pytest-check" %}
 {% set version = "1.1.2" %}
 
 package:
-  name: {{ name|lower }}
+  name: pytest_check
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest_check-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 256967dade58a7289eb324de864ef4f38482a3e995de89db32ea6e5f46565d7e
 
 build:
