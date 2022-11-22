@@ -1,5 +1,5 @@
 {% set name = "pytest_check" %}
-{% set version = "1.0.5" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest_check-{{ version }}.tar.gz
-  sha256: b9c8db6b1dee3c1e66162bd079b81c083296cb7131e9841519c28a40818a4875
+  sha256: 256967dade58a7289eb324de864ef4f38482a3e995de89db32ea6e5f46565d7e
 
 build:
   noarch: python
@@ -16,31 +16,36 @@ build:
 
 requirements:
   host:
-    - flit-core >=2,<3
+    - python >=3.8
+    - flit-core >=3.2,<4
     - pip
-    - python >=3.6
   run:
-    - pytest >=6.0.0
-    - python >=3.6
+    - python >=3.8
+    - pytest
+    - colorama >=0.4.6
 
 test:
-  source_files:
-    - tests
   imports:
     - pytest_check
-  commands:
-    - pip check
-    - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
+  source_files:
+    - tests/
+    - examples/
+    - tox.ini
+  commands:
+    - pip check
     - pytest
 
 about:
-  home: https://github.com/okken/pytest-check
+  home: https://pypi.org/project/pytest-check/
   summary: A pytest plugin that allows multiple failures per test.
   license: MIT
   license_file: LICENSE.txt
 
+
 extra:
   recipe-maintainers:
     - thewchan
+    - bskinn
+    - anjos
