@@ -1,7 +1,7 @@
 About pytest_check
 ==================
 
-Home: https://github.com/okken/pytest-check
+Home: https://pypi.org/project/pytest-check/
 
 Package license: MIT
 
@@ -143,5 +143,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@anjos](https://github.com/anjos/)
+* [@bskinn](https://github.com/bskinn/)
 * [@thewchan](https://github.com/thewchan/)
 
