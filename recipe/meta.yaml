@@ -38,10 +38,11 @@ test:
     - pytest
 
 about:
-  home: https://pypi.org/project/pytest-check/
+  home: https://pypi.org/project/pytest-check
   summary: A pytest plugin that allows multiple failures per test.
   license: MIT
   license_file: LICENSE.txt
+  dev_url: https://github.com/okken/pytest-check
 
 
 extra:
