@@ -1,7 +1,7 @@
-About pytest_check
+About pytest-check
 ==================
 
-Home: https://pypi.org/project/pytest-check/
+Home: https://github.com/okken/pytest-check
 
 Package license: MIT
 
@@ -27,53 +27,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pytest_check-green.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytest--check-green.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) |
 
-Installing pytest_check
+Installing pytest-check
 =======================
 
-Installing `pytest_check` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `pytest-check` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pytest_check` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pytest-check` can be installed with `conda`:
 
 ```
-conda install pytest_check
-```
-
-or with `mamba`:
-
-```
-mamba install pytest_check
-```
-
-It is possible to list all of the versions of `pytest_check` available on your platform with `conda`:
-
-```
-conda search pytest_check --channel conda-forge
+conda install pytest-check
 ```
 
 or with `mamba`:
 
 ```
-mamba search pytest_check --channel conda-forge
+mamba install pytest-check
+```
+
+It is possible to list all of the versions of `pytest-check` available on your platform with `conda`:
+
+```
+conda search pytest-check --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search pytest-check --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search pytest_check --channel conda-forge
+mamba repoquery search pytest-check --channel conda-forge
 
-# List packages depending on `pytest_check`:
-mamba repoquery whoneeds pytest_check --channel conda-forge
+# List packages depending on `pytest-check`:
+mamba repoquery whoneeds pytest-check --channel conda-forge
 
-# List dependencies of `pytest_check`:
-mamba repoquery depends pytest_check --channel conda-forge
+# List dependencies of `pytest-check`:
+mamba repoquery depends pytest-check --channel conda-forge
 ```
 
 
@@ -118,17 +118,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating pytest_check-feedstock
+Updating pytest-check-feedstock
 ===============================
 
-If you would like to improve the pytest_check recipe or build a new
+If you would like to improve the pytest-check recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/pytest_check-feedstock are
+Note that all branches in the conda-forge/pytest-check-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
