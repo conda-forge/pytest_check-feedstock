@@ -42,7 +42,7 @@ outputs:
         - pip check
         - pytest
 
-  - name: {{ name|replace("-","_") }}
+  - name: pytest_check
 
     # Meta-package to the main package, that just installs it
     # it is here to keep-up with the legacy name, containing an
@@ -55,7 +55,7 @@ outputs:
         - python >=3.8
       run:
         - python >=3.8
-        - {{ pin_subpackage(name, exact=True) }}
+        - {{ pin_subpackage("pytest-check", exact=True) }}
 
     test:
       imports:
