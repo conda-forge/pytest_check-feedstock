@@ -10,39 +10,56 @@ source:
   sha256: 1c93bac3c45881a4aa5e1fcf6f0dccad9ee66df178de4ef90376be28fc249a10
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
-requirements:
-  host:
-    - flit-core >=3.2,<4
-    - pip
-    - python >=3.8
-  run:
-    - colorama >=0.4.6
-    - pytest
-    - python >=3.8
+outputs:
+  - name: {{ name }}
 
-test:
-  imports:
-    - pytest_check
-  requires:
-    - pip
-  source_files:
-    - tests/
-    - examples/
-    - tox.ini
-  commands:
-    - pip check
-    - pytest
+    build:
+      noarch: python
+      script: {{ PYTHON }} -m pip install . -vv
+
+    requirements:
+      host:
+        - python >=3.8
+        - flit-core >=3.2,<4
+        - pip
+      run:
+        - python >=3.8
+        - colorama >=0.4.6
+        - pytest
+
+    test:
+      imports:
+        - pytest_check
+      requires:
+        - pip
+      source_files:
+        - tests/
+        - examples/
+        - tox.ini
+      commands:
+        - pip check
+        - pytest
+
+  - name: {{ name|replace("-","_") }}
+    # Meta-package to the main package, that just installs it
+    # it is here to keep-up with the legacy name, containing an
+    # underscore ("_") instead of a dash.
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.8
+      run:
+        - python >=3.8
+        - {{ pin_subpackage(name, exact=True) }}
 
 about:
   home: https://github.com/okken/pytest-check
   summary: A pytest plugin that allows multiple failures per test.
   license: MIT
   license_file: LICENSE.txt
-
 
 extra:
   recipe-maintainers:
