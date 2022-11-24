@@ -43,17 +43,23 @@ outputs:
         - pytest
 
   - name: {{ name|replace("-","_") }}
+
     # Meta-package to the main package, that just installs it
     # it is here to keep-up with the legacy name, containing an
     # underscore ("_") instead of a dash.
     build:
       noarch: python
+
     requirements:
       host:
         - python >=3.8
       run:
         - python >=3.8
         - {{ pin_subpackage(name, exact=True) }}
+
+    test:
+      imports:
+        - pytest_check
 
 about:
   home: https://github.com/okken/pytest-check
