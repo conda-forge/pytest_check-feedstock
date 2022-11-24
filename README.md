@@ -28,6 +28,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pytest--check-green.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytest_check-green.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) |
 
 Installing pytest-check
 =======================
@@ -39,16 +40,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pytest-check` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pytest-check, pytest_check` can be installed with `conda`:
 
 ```
-conda install pytest-check
+conda install pytest-check pytest_check
 ```
 
 or with `mamba`:
 
 ```
-mamba install pytest-check
+mamba install pytest-check pytest_check
 ```
 
 It is possible to list all of the versions of `pytest-check` available on your platform with `conda`:
