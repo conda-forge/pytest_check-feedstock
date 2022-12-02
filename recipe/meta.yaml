@@ -1,5 +1,5 @@
 {% set name = "pytest-check-meta" %}
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/pytest-check/pytest-check-{{ version }}.tar.gz
-  sha256: 2017d1f9f73adaa1f82c38c3f90adb85b852d69535bb65c3f757147f99656a52
+  sha256: a387968d62525738cd9f36a528013316d7d915cf0ccf5be146a38e7fffa0bba9
 
 build:
   number: 0
@@ -48,7 +48,6 @@ outputs:
     # it is here to keep-up with the legacy name, containing an
     # underscore ("_") instead of a dash.
     build:
-      noarch: python
 
     requirements:
       host:
