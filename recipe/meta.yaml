@@ -48,6 +48,7 @@ outputs:
     # it is here to keep-up with the legacy name, containing an
     # underscore ("_") instead of a dash.
     build:
+      noarch: generic
 
     requirements:
       host:
