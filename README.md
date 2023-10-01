@@ -1,11 +1,11 @@
-About pytest-check-meta
-=======================
+About pytest-check-meta-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest_check-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/okken/pytest-check
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest_check-feedstock/blob/main/LICENSE.txt)
 
 Summary: A pytest plugin that allows multiple failures per test.
 
