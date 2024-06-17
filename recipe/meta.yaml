@@ -26,7 +26,7 @@ outputs:
         - pip
       run:
         - python >=3.8
-        - pytest
+        - pytest >=7.0.0
 
     test:
       imports:
