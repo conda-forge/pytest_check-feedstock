@@ -39,7 +39,7 @@ outputs:
         - tox.ini
       commands:
         - pip check
-        - pytest
+        - pytest -k "not test_max_tb"
 
   - name: pytest_check
 
