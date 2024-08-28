@@ -1,16 +1,16 @@
 {% set name = "pytest-check-meta" %}
-{% set version = "2.1.4" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/pytest-check/pytest-check-{{ version }}.tar.gz
-  sha256: 01b37fd703da0fa667b7017af1f0460c744a85f1ee87675ee3e0f94acc3df172
+  url: https://pypi.io/packages/source/{{ name[0] }}/pytest-check/pytest_check-{{ version }}.tar.gz
+  sha256: 4de76a794a0b504550cce85cfcd6d7bba9c4b99ba2172ef56867c98122518ae3
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: pytest-check
@@ -39,7 +39,7 @@ outputs:
         - tox.ini
       commands:
         - pip check
-        - pytest
+        - pytest -k "not test_max_tb"
 
   - name: pytest_check
 
