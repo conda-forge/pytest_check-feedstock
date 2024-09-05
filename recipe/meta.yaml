@@ -10,7 +10,7 @@ source:
   sha256: 5224efcef059bf7f0cda253f8d0f62704b4819ff48c93f51c675aea6a014f650
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: pytest-check
