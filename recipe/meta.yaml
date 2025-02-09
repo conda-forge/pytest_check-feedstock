@@ -10,7 +10,7 @@ source:
   sha256: 5aa59e0c1b670651b96f40819dc0607dcd8a3f6781804f8d9534100f32e20c27
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: pytest-check
@@ -22,7 +22,7 @@ outputs:
     requirements:
       host:
         - python {{ python_min }}
-        - flit-core >=3.2,<4
+        - hatchling
         - pip
       run:
         - python >={{ python_min }}
