@@ -1,5 +1,5 @@
 {% set name = "pytest-check-meta" %}
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/pytest-check/pytest_check-{{ version }}.tar.gz
-  sha256: 5224efcef059bf7f0cda253f8d0f62704b4819ff48c93f51c675aea6a014f650
+  sha256: 5aa59e0c1b670651b96f40819dc0607dcd8a3f6781804f8d9534100f32e20c27
 
 build:
-  number: 2
+  number: 0
 
 outputs:
   - name: pytest-check
