@@ -27,6 +27,7 @@ outputs:
       run:
         - python >={{ python_min }}
         - pytest
+        - typing-extensions >= 4.12.2
 
     test:
       imports:
@@ -52,14 +53,16 @@ outputs:
 
     requirements:
       host:
-        - python >=3.8
+        - python {{ python_min }}
       run:
-        - python >=3.8
+        - python >={{ python_min }}
         - {{ pin_subpackage("pytest-check", exact=True) }}
 
     test:
       imports:
         - pytest_check
+      requires:
+        - python {{ python_min }}
 
 about:
   home: https://github.com/okken/pytest-check
