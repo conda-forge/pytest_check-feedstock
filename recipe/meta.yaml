@@ -27,7 +27,7 @@ outputs:
       run:
         - python >={{ python_min }}
         - pytest
-        - typing-extensions >= 4.12.2
+        - typing-extensions >=4.12.2
 
     test:
       imports:
