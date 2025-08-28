@@ -28,7 +28,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pytest--check-green.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest-check.svg)](https://anaconda.org/conda-forge/pytest-check) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pytest_check-green.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytest__check-green.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest_check.svg)](https://anaconda.org/conda-forge/pytest_check) |
 
 Installing pytest-check-meta
 ============================
