@@ -42,6 +42,7 @@ outputs:
             - examples/
             - LICENSE.txt
             - pyproject.toml
+            - README.md
             - tox.ini
         requirements:
           run:
