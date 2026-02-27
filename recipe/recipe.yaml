@@ -38,6 +38,7 @@ outputs:
           python_version: ${{ python_min }}.*
       - files:
           source:
+            - src/
             - tests/
             - examples/
             - LICENSE.txt
