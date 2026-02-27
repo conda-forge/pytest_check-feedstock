@@ -44,6 +44,7 @@ outputs:
         requirements:
           run:
             - python ${{ python_min }}.*
+            - hatchling
             - tox
             - tox-uv
         script:
