@@ -40,11 +40,11 @@ outputs:
           source:
             - tests/
             - examples/
+            - pyproject.toml
             - tox.ini
         requirements:
           run:
             - python ${{ python_min }}.*
-            - hatchling
             - tox
             - tox-uv
         script:
