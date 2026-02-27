@@ -44,8 +44,10 @@ outputs:
         requirements:
           run:
             - python ${{ python_min }}.*
+            - tox
+            - tox-uv
         script:
-          - pytest -k "not test_max_tb"
+          - tox -e py
     # Meta-package to the main package, that just installs it
     # it is here to keep-up with the legacy name, containing an
     # underscore ("_") instead of a dash.
