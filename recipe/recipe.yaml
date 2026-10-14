@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pytest-check-meta
-  version: "3.0.1"
+  version: "3.0.2"
 
 recipe:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/pytest-check/pytest_check-${{ version }}.tar.gz
-  sha256: 73506fde43d9140fac4f7d5e56fc2194632c81911234a64752025e1349a0653a
+  sha256: 832ae62a04d601ca3cc9abfa2e7265cf9fb9a6723d2a5f4852a9ea8dc27c29fe
 
 build:
   number: 0
